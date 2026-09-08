@@ -2,7 +2,7 @@ name: Build & Release Android APK
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "mnbots" ]
   workflow_dispatch:
 
 jobs:
