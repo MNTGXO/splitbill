@@ -1,0 +1,19 @@
+<manifest xmlns:android="[http://schemas.android.com/apk/res/android](http://schemas.android.com/apk/res/android)">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- Required for launching external UPI payment apps on Android 11+ -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="upi" />
+        </intent>
+    </queries>
+
+    <application
+        android:label="SplitBill"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        <!-- Default Flutter activities -->
+    </application>
+</manifest>
